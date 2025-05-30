@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(121, 50, 161);
+    margin-top: 3%;
+    margin-left: 19%;
+}
+.first-div, .second-div{
+    width: 300px;   
+    height: 400px;
+    padding: 20px;
+}
+
+.first-div{
+    background-color: rgb(0, 183, 255);
+    color: white;
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    padding: 7% 2% 1%;
+    vertical-align: top;
+}
+.first-div h1{
+    font-weight: bold;
+}
+
+.second-div{
+    color: white;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding-left: 3%;
+    display: inline-block;
+    height: 448px;
+}
+
+.second-div h1{
+text-align: center;
+color: black;
+font-weight: bold;
+}
+
+.second-div h6{
+color: black;
+}
+
+.second-div input{
+    margin: 2%;
+    padding: 3%;
+    width: 250px;
+    background-color: rgba(150, 145, 145, 0.274);
+}
+
+.second-div textarea{
+    padding: 2%;
+    margin-top: 2px;
+    margin-left: 3%;
+    background-color: rgba(150, 145, 145, 0.274);
+     
+} 
+
+.second-div input[type="submit"]{
+  background-color: rgb(0, 183, 255);
+  color: white;
+  border-radius: 25px;
+  border: 0;
+  cursor: pointer;
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 74px;
+}
