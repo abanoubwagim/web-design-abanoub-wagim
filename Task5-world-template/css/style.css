@@ -1,0 +1,820 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #8D8D8D;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+
+.fm-Ub {
+    font-family: "Ubuntu", sans-serif;
+}
+
+a:hover {
+    color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 84%;
+    height: 80px;
+    z-index: 100;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    padding: 20px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav i {
+    font-size: 119%;
+}
+
+nav i:hover {
+    color: white;
+}
+
+footer {
+    background-color: #161616;
+    padding: 64px 0;
+}
+
+footer .container {
+    display: flex;
+    gap: 6%;
+}
+
+.container {
+    margin: auto;
+    width: 84%;
+}
+
+.dark-gray {
+    color: #8D8D8D;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.po-re {
+    position: relative;
+}
+
+.po-ab {
+    position: absolute;
+}
+
+.box {
+    width: 27%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.box .circle-num {
+    border-radius: 50%;
+    width: 138px;
+    height: 69px;
+    border: 8px solid #0000FF;
+    border-left-color: #8D8D8D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.box .text p {
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1.4;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.box .text p:hover {
+    color: white;
+}
+
+.bg-ground-op {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.w-box {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+    background: rgb(255, 255, 255);
+    height: 216.3px;
+    box-shadow: 0 1px 9px 3px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+}
+
+.w-box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 1px;
+    padding: 10px;
+}
+
+.w-box-text h5 {
+    font-size: 21px;
+}
+
+.w-box-text p {
+    color: #8D8D8D;
+    font-size: 20px;
+}
+
+.w-box h6 {
+    color: #8D8D8D;
+    font-size: 13px;
+}
+
+.inside-box {
+    position: relative;
+    width: 100%;
+}
+
+.inside-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    z-index: 5;
+}
+
+.overlay-text h4 {
+    padding: 1%;
+    margin: 6% 0;
+    color: blue;
+    background-color: white;
+    width: 23%;
+    text-align: center;
+    margin-left: 39%;
+    font-family: monospace;
+}
+
+.overlay-text p {
+    font-weight: bold;
+    line-height: 24px;
+    padding: 0 8px;
+}
+
+.inside-box .bg-ground-op {
+    background-color: rgb(0 0 0 / 46%);
+}
+
+.img-box-text {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    line-height: 30px;
+}
+
+.img-box-text h5 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.img-box-text p {
+    margin: 14px 0;
+    color: #8D8D8D;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.img-box-text h6 {
+    color: #8D8D8D;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-a {
+    color: black;
+}
+
+.heading-row {
+    display: flex;
+    align-items: center;
+    gap: 152px;
+    margin-top: 28px;
+}
+
+.txt-a h5 {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 0;
+    margin-right: auto;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
+
+.a-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-family: "Ubuntu", sans-serif;
+    outline: none;
+    font-size: 14px;
+}
+
+.a-links a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    padding-bottom: 5px;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.a-links a::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.3s ease;
+}
+
+.a-links a:hover::after,
+.a-links a.active::after {
+    width: 16px;
+}
+
+.a-links li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.a-links a:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+.main-content .ft-content {
+    margin-top: 32px;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 31px;
+}
+
+.ft-content-left {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ft-content-left .ft-content-img {
+    position: relative;
+    width: 100%;
+}
+
+.ft-content-left .ft-content-img h4 {
+    position: absolute;
+    top: 19px;
+    left: 24px;
+    background-color: white;
+    color: #0000FF;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.ft-content-left .ft-content-img img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.ft-content-txt h5 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.ft-content-txt p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.ft-content-txt h6 {
+    font-size: 12px;
+    color: #666;
+}
+
+.ft-content-txt {
+    padding: 15px 79px 15px 29px;
+}
+
+.main-content .ft-content .ft-content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.main-content .ft-content .ft-content-right .ri-box {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 106px;
+    box-shadow: 0 1px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.main-content .ft-content .ft-content-right .ri-box .ri-box-txt {
+    padding: 19px;
+}
+
+.main-content .ft-content .ft-content-right .ri-box .ri-box-txt h5 {
+    margin-top: 4px;
+}
+
+.main-content .ft-content .ft-content-right .ri-box .ri-box-txt p {
+    margin-top: 17px;
+    font-size: 13px;
+}
+
+.ft-arrow {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    margin-left: 15px;
+}
+
+.ft-arrow .ft-arrow-rt {
+    border: 2px solid #8D8D8D;
+    border-radius: 22px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #8D8D8D;
+}
+
+.ft-arrow .ft-arrow-lt {
+    border: 2px solid #8D8D8D;
+    border-radius: 22px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #8D8D8D;
+}
+
+.content-wrapper .side-bar .top h4 {
+    font-size: 18px;
+    color: #000000;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    margin: 18px 0px 18px 33px;
+}
+
+.content-wrapper .side-bar .world hr {
+    border: none;
+    border: 1px solid #F1F1F1;
+}
+
+.content-wrapper .side-bar .top .top-boxs {
+    display: flex;
+    flex-direction: column;
+    padding: 33px 0 16px 32px;
+    gap: 5px;
+}
+
+.content-wrapper .side-bar .top hr {
+    border: none;
+    border-bottom: 2px solid #F1F1F1;
+}
+
+.content-wrapper .side-bar .top .top-boxs .top-boxs-box {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    box-shadow: 0 1px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper .side-bar .top .top-boxs .top-boxs-box h5 {
+    margin: 21px;
+}
+
+.content-wrapper .side-bar .top .top-boxs .top-boxs-box img {
+    width: 80px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.to-pi {
+    display: flex;
+    flex-direction: column;
+}
+
+.to-pi h5 {
+    font-size: 18px;
+    color: #000000;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    margin: 18px 0px 18px 33px;
+}
+
+.to-pi img {
+    margin: 30px 0 0 33px;
+}
+
+.to-pi p {
+    color: black;
+}
+
+.side-bar .world h4 {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 0;
+    margin-right: auto;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    margin: 0px 0px 11px 33px;
+}
+
+.ft-content-left-boxs {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.ft-content-left-boxs-box-txt {
+    display: flex;
+    flex-direction: column;
+    padding: 19px;
+}
+
+.ft-content-left-boxs-box-txt h5 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.ft-content-left-boxs-box-txt p {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.ft-content-left-boxs-box {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 1px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+#bg-first {
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+#content {
+    border-radius: 4px;
+    width: 320%;
+    background-color: white;
+    z-index: 10000;
+    top: 154%;
+    padding: 28% 20% 0;
+    color: #16181B;
+    opacity: 1;
+    left: -25%;
+    transition: opacity 0.3s ease;
+    visibility: hidden;
+}
+
+#content h5 {
+    margin-bottom: 18%;
+    font-size: 88%;
+}
+
+#arrow-bottom {
+    right: -12px;
+    top: 6px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid gray;
+}
+
+li:hover #content {
+    visibility: visible;
+}
+
+#arrow-bottom:hover {
+    border-top-color: white;
+}
+
+#bg-first-bt {
+    width: 85%;
+    height: 14%;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 4;
+    position: absolute;
+    padding: 0 0 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8%;
+}
+
+#left-footer {
+    width: 25%;
+}
+
+
+
+#left-footer p {
+    margin-top: 7%;
+    line-height: 132%;
+}
+
+#center-footer {
+    width: 35%;
+    padding: 1% 0;
+}
+
+#center-footer h5 {
+    display: inline-block;
+    width: 14%;
+    margin-bottom: 5%;
+    margin-right: 18%;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Ubuntu", sans-serif;
+    color: #8d8d8d;
+}
+
+#center-footer h5:hover {
+    color: #0000FF;
+    transition: 0.8s;
+}
+
+#right-footer {
+    width: 28%;
+}
+
+#right-footer h4 {
+    color: white;
+    margin-bottom: 5%;
+}
+
+#right-footer #mail {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #8D8D8D;
+}
+
+#boxs {
+    width: 100%;
+    position: relative;
+    padding: 28px 0;
+}
+
+#boxs .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+#boxs .box {
+    width: 34%;
+    position: relative;
+    padding: 0;
+}
+
+#th-sc {
+    background-color: white;
+}
+
+#th-sc-fr {
+    display: grid;
+    grid-template-columns: 67% 31%;
+    grid-template-areas: "art vid";
+    gap: 2%;
+}
+
+#th-sc-fr-left {
+    grid-area: art;
+}
+
+#th-sc-fr-left>h5 {
+    margin-bottom: 13px;
+    margin-top: 2%;
+    font-size: 18px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
+
+#th-sc-fr-left>hr {
+    margin: 12px 0 22px;
+    border: none;
+    border: 1px solid #F1F1F1;
+    margin-bottom: 26px;
+}
+
+#th-sc-fr-right {
+    grid-area: vid;
+}
+
+#th-sc-fr-right>h5 {
+    margin-bottom: 13px;
+    margin-top: 4%;
+    font-size: 18px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
+
+#th-sc-fr-right>hr {
+    margin: 12px 0 22px;
+    border: none;
+    border: 1px solid #F1F1F1;
+    margin-bottom: 26px;
+}
+
+#th-sc-fr-right .th-sc-fr-right-box .img-box {
+    position: relative;
+    width: 100%;
+}
+
+#th-sc-fr-right .th-sc-fr-right-box .img-box h6 {
+    position: absolute;
+    font-size: 13px;
+    transform: translate(20px, -180px);
+    background-color: white;
+    color: blue;
+    padding: 1%;
+}
+
+#th-sc-fr-right .th-sc-fr-right-box .img-box i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 41px;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    opacity: 0.8;
+}
+
+#th-sc-fr-right .th-sc-fr-right-box {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 1px 9px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+
+#th-sc-fr-right .th-sc-fr-right-box .img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+#boxs .overlay-text h6 {
+    left: 91px;
+    position: absolute;
+    bottom: -39px;
+    color: #8D8D8D;
+}
+
+section #bt-ce {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+section #bt-ce button {
+    padding: 1%;
+    width: 11%;
+    border: 1px solid #d7d7d7;
+    background-color: transparent;
+    color: #8d8d8d;
+    border-radius: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+section #bt-ce button:hover {
+    border: 1px solid blue;
+    color: white;
+    background-color: blue;
+    transition: 1.5s;
+}
+
+#sc-sec {
+    padding: 83px 0;
+}
+
+#sc-sec .container .content-wrapper .side-bar {
+    border-left: 2px solid #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    height: 96%;
+}
+
+#sc-sec .container .content-wrapper .side-bar>h4 {
+    padding-left: 32px;
+}
+
+#sc-sec .container .content-wrapper .side-bar p {
+    padding: 34px;
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+#sc-sec .container .content-wrapper .side-bar .top .sc-med .sc-med-ico {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0 20px 32px;
+    justify-content: space-between;
+}
+
+#sc-sec .container .content-wrapper .side-bar .top .sc-med .sc-med-ico i {
+    border: 1px solid #8D8D8D;
+    border-radius: 22px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #8D8D8D;
+}
+
+#sc-sec .container .content-wrapper .sc-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    margin-top: 35px;
+}
+
+#sc-sec .container .content-wrapper .main-content .txt-a hr {
+    margin-top: 14px;
+    border: none;
+    border: 2px solid #F1F1F1;
+}
