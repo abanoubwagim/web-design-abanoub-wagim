@@ -1,0 +1,34 @@
+.card h1 {
+    transition: top 0.4s ease;
+    z-index: 2;
+    top: 10% !important;
+}
+
+
+.sr-b {
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 7.5%;
+    color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3; 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+.card:hover .sr-b {
+    opacity: 1;
+    
+}
+
+
+.sr-b p {
+    font-size: 86%;
+    margin-top: 14%;
+}
+
+
