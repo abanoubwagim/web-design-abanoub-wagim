@@ -17,16 +17,23 @@
 <body>
 
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg custom-navbar-bg fixed-top">
-        <div class="container">
+    <nav class="">
+       
+    </nav>
 
-            <!-- Logo -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <i class="fa-solid fa-paw me-2"></i>
-                Paws n' Play
-            </a>
+    <!-- First Section  -->
+    <section class="position-relative w-100 vh-100">
 
-            <!-- Mobile Toggler -->
+        <!-- nav -->
+        <nav class=" container navbar navbar-expand-lg custom-navbar-bg  position-relative z-1">
+
+                    <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center me-5" href="#">
+                    <i class="fa-solid fa-paw me-2"></i>
+                    Paws n' Play
+                </a>
+
+                    <!-- Mobile Toggler -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -35,6 +42,7 @@
 
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               
                 <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
@@ -64,7 +72,7 @@
                         </ul>
                     </li>
 
-                    <!-- Plain links (wrapped in <li>) -->
+                    <!-- links -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">About Us</a>
                     </li>
@@ -76,19 +84,13 @@
                     </li>
                 </ul>
 
-                <!-- CTA Button -->
+                <!-- GET Button -->
                 <form class="d-flex">
                     <button class="btn rounded-pill bg-white fw-bold px-4" type="submit">Get Started</button>
                 </form>
             </div>
-
-
-        </div>
-    </nav>
-
-    <!-- First Section  -->
-    <section class="position-relative w-100 vh-100 overflow-hidden">
-
+        </nav>
+          
         <!-- Background Image -->
         <img src="https://st5.depositphotos.com/34206794/71551/i/450/depositphotos_715513956-stock-photo-portrait-dog-bright-yellow-background.jpg"
             class="w-100 h-100 object-fit-cover position-absolute top-0 start-0" alt="">
@@ -288,8 +290,8 @@
                     <div class="row g-3">
                         <!-- Card 1 -->
                         <div class="col-6">
-                            <div class="card h-100 position-relative overflow-hidden">
-                                <div class="sr-b align-items-center text-center">
+                            <div class="card h-100 position-relative">
+                                <div class="sr-b align-items-center text-center ">
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ab optio velit
                                         laboriosam, voluptatibus, consequuntur nulla id laudantium maiores animi, natus
                                         ratione illum labore aspernatur tempore totam repudiandae facere unde maxime
@@ -307,7 +309,7 @@
                         <!-- Card 2 -->
                         <div class="col-6">
                             <div class="card h-100 position-relative">
-                                <div class="sr-b align-items-center text-center overflow-hidden">
+                                <div class="sr-b align-items-center text-center ">
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ab optio velit
                                         laboriosam, voluptatibus, consequuntur nulla id laudantium maiores animi, natus
                                         ratione illum labore aspernatur tempore totam repudiandae facere unde maxime
@@ -325,7 +327,7 @@
                         <!-- Card 3 -->
                         <div class="col-6">
                             <div class="card h-100 position-relative">
-                                <div class="sr-b align-items-center text-center overflow-hidden">
+                                <div class="sr-b align-items-center text-center ">
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ab optio velit
                                         laboriosam, voluptatibus, consequuntur nulla id laudantium maiores animi, natus
                                         ratione illum labore aspernatur tempore totam repudiandae facere unde maxime
@@ -343,7 +345,7 @@
                         <!-- Card 4 -->
                         <div class="col-6">
                             <div class="card h-100 position-relative">
-                                <div class="sr-b align-items-center text-center overflow-hidden">
+                                <div class="sr-b align-items-center text-center">
                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ab optio velit
                                         laboriosam, voluptatibus, consequuntur nulla id laudantium maiores animi, natus
                                         ratione illum labore aspernatur tempore totam repudiandae facere unde maxime
@@ -587,16 +589,21 @@
                         style="background-color: #1e2b45;">Read more</button>
                 </div>
 
-                <!-- Image/Video Column: Hidden on small screens -->
+                <!-- Image/Video Column-->
                 <div class="col-md-6 d-none d-md-block">
-                    <div class="position-relative text-center">
-                        <img src="images/dog2.png" alt="Video thumbnail" class="img-fluid">
-                        <a href="https://www.youtube.com/watch?v=zpOULjyy-n8"
-                            class="position-absolute top-50 start-50 translate-middle" target="_blank">
-                            <i class="fa-solid fa-circle-play fa-4x text-white"
-                                style="text-shadow: 0 0 10px rgba(0,0,0,0.6);"></i>
-                        </a>
-                    </div>
+
+                        <div class="position-relative text-center">
+                            <img src="images/dog2.png" alt="Video thumbnail" class="img-fluid">
+                            
+                            <a href="https://www.youtube.com/watch?v=zpOULjyy-n8"
+
+                                class="position-absolute top-50 start-50 translate-middle" target="_blank">
+
+                                <i class="fa-solid fa-circle-play fa-4x text-white"
+                                    style="text-shadow: 0 0 10px rgba(0,0,0,0.6);"></i>
+                            </a>
+                        </div>
+                        
                 </div>
             </div>
         </div>
