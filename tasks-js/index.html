@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+
+    <i class="fa-solid fa-arrow-up back-to-top" id="myCircle" ></i>
+
+    <div class="container mt-4">
+        <div class="table-responsive">
+            <table class="table table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Balance</th>
+                        <th>Id</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+
+                <tbody id="body">
+                    <tr>
+                        <td>Abanoub</td>
+                        <td>$1000</td>
+                        <td>101</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm btnDelete"><i class="fas fa-trash"></i> Delete</button>
+                            <button class="btn btn-primary btn-sm btnEdit"><i class="fas fa-edit"></i> Edit
+                                Balance</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <button id="btnAdd" class="btn btn-success mt-3">Add New Row</button>
+    </div>
+
+    <div class="counter-section text-center mt-5" style="font-size: 48px; font-weight: bold; color: #007bff;">
+
+
+
+        <div class="row">
+
+            <div class="col-3 shadow">
+                <span id="counterF">0</span>
+            </div>
+
+            <div class="col-3 shadow">
+                <span id="counterT">0</span>
+            </div>
+
+            <div class="col-3 shadow">
+                <span id="counterFi">0</span>
+            </div>
+
+            <div class="col-3 shadow">
+                <span id="counterTw">0</span>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
