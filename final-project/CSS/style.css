@@ -1,0 +1,713 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.hv-do {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.nav-item.dropdown:hover .hv-do {
+  display: block;
+  opacity: 1;
+}
+
+
+
+
+
+.navbar-nav .nav-item:hover .nav-link {
+  color: blue;
+}
+
+
+.dropdown-menu .dropdown-item:hover {
+  color: blue;
+}
+
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  right: 100%;
+  left: auto;
+}
+
+
+@media (min-width: 992px) {
+  .dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+    opacity: 1;
+  }
+
+
+}
+
+.dropdown-slide-left {
+  transform: translate(-60px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: block;
+  visibility: hidden;
+}
+
+
+.nav-item.dropdown:hover .dropdown-slide-left {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(20px);
+  transition: all 0.3s ease;
+  right: 100%;
+  top: 0;
+  min-width: 184px;
+  z-index: 999;
+  display: block;
+  pointer-events: none;
+}
+
+
+.dropdown-submenu:hover>.dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.carousel-indicators {
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  right: 47px;
+  left: auto;
+  bottom: auto;
+  transform: translateY(-50%);
+  margin: 0;
+  z-index: 10;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border: none;
+  margin: 5px 0;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+  border: none;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.hv {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  border-color: white;
+  background-color: transparent;
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  z-index: 1;
+}
+
+.hv span {
+  position: relative;
+  z-index: 2;
+}
+
+.hv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -101%;
+  width: 100%;
+  height: 100%;
+  background-color: #0d6efd;
+  transform: skewX(-20deg);
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+}
+
+
+.hv:hover::before {
+  left: 0;
+  
+}
+
+.hv:hover {
+  color: white;
+  border-color: #0d6efd;
+
+}
+
+
+
+.zo h1 {
+  animation: zoomIn 1s ease-out forwards;
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zo p {
+  animation: slideInRight 1s cubic-bezier(0, 0, 0.96, 1.02) forwards;
+  transform: translateX(400px) scale(0.5);
+  opacity: 0;
+}
+
+@keyframes slideInRight {
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    font-size: 20px;
+  }
+}
+
+.zo .btn {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hav-b:hover h5 {
+  color: blue;
+  transition: color 0.3s ease;
+}
+
+.hav-b:hover i {
+  color: blue;
+  transition: color 0.3s ease;
+}
+
+
+.hv-co {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.hover-overlay {
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: 2;
+
+
+}
+
+.hv-co:hover .hover-overlay {
+  opacity: 1;
+}
+
+.read-more-btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  background-color: #0d6efd;
+  border: 2px solid #0d6efd;
+  color: white;
+}
+
+.read-more-btn {
+  position: relative;
+  overflow: hidden;
+  background-color: #0d6efd;
+  border: 2px solid #0d6efd;
+  color: white;
+  z-index: 1;
+}
+
+/* Animated background */
+.read-more-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -101%;
+  width: 100%;
+  height: 100%;
+  background-color: #3f8efc;
+  transition: all 0.4s ease-in-out;
+  z-index: 0;
+  transform: skewX(-20deg);
+}
+
+/* On hover, slide the background */
+.read-more-btn:hover::before {
+  left: 102%;
+}
+
+/* Keep text visible above animation */
+.read-more-btn span {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+}
+
+/* Optional: maintain text color on hover */
+.read-more-btn:hover {
+  color: white;
+}
+
+
+
+.hover-overlay {
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  z-index: 2;
+}
+
+.card .hover-ovly {
+  transform: translateY(100%);
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 2;
+}
+
+
+.card:hover .hover-ovly {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+
+.card:hover .hover-overlay {
+  transform: translateY(0);
+}
+
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+.nav-item-hover {
+  transition: color 0.3s ease;
+}
+
+.nav-item-hover:hover,
+.nav-item-hover:hover span {
+  color: #0d6efd;
+}
+
+
+.custom-left {
+  left: 0;
+  width: 100%;
+  max-width: 272px;
+}
+
+@media (min-width: 768px) {
+
+  /* md */
+  .custom-left {
+    left: 118px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  /* lg */
+  .custom-left {
+    left: 153px;
+  }
+}
+
+
+
+
+
+.hv-cad {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+
+.hv-cad .team-info {
+  position: absolute;
+  bottom: -29%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease;
+  width: 100%;
+  z-index: 1;
+  line-height: 23px;
+}
+
+.hv-cad:hover .team-info {
+  bottom: -10px;
+}
+
+.hav-link {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, 100%);
+  opacity: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition-delay: 0.2s;
+  background-color: #0d6efd;
+  padding: 0.5rem 0;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.hv-cad:hover .hav-link {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.hv-cad::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  border-bottom: 2px solid black;
+  z-index: 1;
+  transition: visibility 0.3s ease;
+}
+
+.hv-cad:hover::after {
+  visibility: hidden;
+}
+
+.hv-cad::after {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+
+.hv-card:hover {
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.6);
+}
+
+.hv-card img {
+  transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1.5);
+}
+
+
+.overlay-box {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75%;
+  height: auto;
+  opacity: 0;
+  overflow: hidden;
+  transition: height 0.4s ease, opacity 0.4s ease, margin-right 0.5s ease;
+
+}
+
+.hvo-card:hover .overlay-box {
+  bottom: 10px;
+  height: auto;
+  opacity: 1;
+
+}
+
+
+
+
+
+.hvo-card:hover {
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
+
+
+.hav-link a i {
+  color: white;
+}
+
+.hav-link a i:hover {
+  color: black;
+}
+
+
+
+
+.img-sh {
+  filter: drop-shadow(-5px -5px 6px #D7D7D7);
+}
+
+.toggle-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.toggle-group {
+  display: flex;
+  border: 2px solid #0d6efd;
+  border-radius: 999px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.toggle-group .nav-link {
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  color: #0d6efd;
+  background-color: white;
+  border-radius: 0;
+  transition: all 0.3s ease;
+}
+
+.toggle-group .nav-link.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.toggle-group .nav-item:first-child .nav-link {
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+}
+
+.toggle-group .nav-item:last-child .nav-link {
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+}
+
+
+.underline-blue::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: #0d6efd;
+  margin: 6px auto 0;
+}
+
+.hv-ico {
+  background-color: black;
+}
+
+.hv-con:hover .hv-ico {
+  background-color: #0d6efd;
+}
+
+.hv-ico i {
+  color: white;
+}
+
+.hv-ico i:hover {
+  color: #71a4f0;
+}
+
+.hv-con .d-flex {
+  z-index: 2;
+}
+
+.hv-con a {
+  color: black;
+}
+
+.hv-con a:hover {
+  color: #0d6efd;
+}
+
+.hv-txt a {
+  color: #AEAEAE;
+}
+
+.hv-ico,
+.hv-ico i,
+.hv-con a {
+  transition: all 0.3s ease;
+}
+
+
+.hv-arrow a {
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.hv-arrow a i {
+  transition: transform 0.3s ease;
+}
+
+.hv-arrow a:hover i {
+  transform: translateX(10px);
+}
+
+.hover-line {
+  width: 93px;
+  height: 3px;
+  background-color: #0d6efd;
+  border: none;
+  transition: width 0.3s ease;
+
+}
+
+.hv-con:hover .hover-line {
+  width: 275px;
+}
+
+.hv-con img {
+  z-index: 1;
+  transition: transform 0.4s ease;
+}
+
+.hv-con:hover img {
+  transform: scale(1.1) rotate(-3deg);
+
+}
+
+
+.us::after {
+  position: absolute;
+  content: "\f2a0";
+  /* Unicode icon */
+  left: 65px;
+  font-size: 83px;
+  font-family: "Font Awesome 6 Free";
+  /* or the correct font */
+  font-weight: 900;
+  /* required for solid icons in Font Awesome */
+  color: #fff;
+  top: 50%;
+  transform: translateY(-45%);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+
+.heading-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 1rem;
+}
+
+.heading-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 66px;
+  height: 2px;
+  background-color: #0d6efd;
+  /* Bootstrap primary blue */
+}
+
+.hover-wrapper {
+  position: relative;
+}
+
+.hover-overlay {
+  transition: opacity 0.2s ease;
+}
+
+.hover-wrapper:hover .hover-overlay {
+  opacity: 0.5;
+}
+
+.hover-gray {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.hover-gray:hover {
+  color: #BBBBBB;
+  /* Light gray on hover */
+}
+
+.btn-custom {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+
+.card-custom {
+  transition: box-shadow 0.3s ease;
+}
+
+
+
+.profile-img {
+  width: 166px;
+  height: 118px;
+}
+
+
+
+
+.arrow-btn {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+  padding: 10px 13px;
+}
+
+.arrow-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 45px;
+  height: 45px;
+  background-color: #0d6efd;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer; 
+  
+}
+
+.back-to-top:hover {
+  background-color: #0056b3;
+}
