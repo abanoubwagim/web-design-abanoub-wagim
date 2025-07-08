@@ -39,7 +39,6 @@
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (email === "") {
       setRequiredError("emailError");
-      hasError = true;
     } else if (!emailPattern.test(email)) {
       emailError.textContent = "Please enter a valid email address.";
     }
